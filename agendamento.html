@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agendamento - Bruna Hair Style</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h2>Agendamento de Cliente</h2>
+        <p>Preencha os dados abaixo para marcar seu horário</p>
+    </header>
+
+    <form id="agendamentoForm">
+        <div class="form-group">
+            <label for="nome">Nome Completo:</label>
+            <input type="text" id="nome" required placeholder="Seu nome">
+        </div>
+
+        <div class="form-group">
+            <label for="data">Data:</label>
+            <input type="date" id="data" required>
+        </div>
+
+        <div class="form-group">
+            <label for="horario">Horário:</label>
+            <input type="time" id="horario" required>
+        </div>
+
+        <div class="form-group">
+            <label for="procedimento">Procedimento:</label>
+            <select id="procedimento" required>
+                <option value="">Selecione...</option>
+                <option value="Corte de Cabelo">Corte de Cabelo</option>
+                <option value="Coloração">Coloração</option>
+                <option value="Escova">Escova</option>
+                <option value="Manicure">Manicure</option>
+                <option value="Outro">Outro</option>
+            </select>
+        </div>
+
+        <button type="submit" class="btn">Confirmar Agendamento</button>
+    </form>
+
+    <div id="successMessage" class="success" style="display:none;">
+        ✅ Agendamento realizado com sucesso! Entraremos em contato para confirmar.
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
